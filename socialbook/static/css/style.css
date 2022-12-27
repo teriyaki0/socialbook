@@ -1,0 +1,49 @@
+body {
+background-color: #f2f2f2;
+}
+.closed{
+    display: none;
+}
+
+.add_post {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    color: white;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+}
+.bg-pink{
+background-color:#e75348;
+}
+
+.contend {
+    color: black;
+    border-radius: 10px;
+}
+.image{
+object-fit:cover;
+max-height:600px;}
+.card-hed {
+    border-bottom: solid white 1px;
+}
+.w{
+max-width:1000px;}
+.avatar-circle{
+display:flex;
+vertical-align:middle;
+text-align:center;
+width:50px;
+height:50px;
+border-radius:50%;
+}
+.avatar-content{
+    position: relative;
+    top: 3px;
+    left: 18px;
+   }

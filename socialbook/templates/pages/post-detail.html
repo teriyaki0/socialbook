@@ -1,0 +1,105 @@
+
+{% extends '../base.html' %}
+
+{% block title %}Главная страница{% endblock %}
+    
+{% block content %}
+        <div class="card">
+          <!-- Card header START -->
+          <div class="card-header border-0 pb-0 bg-white">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <!-- Avatar -->
+                <div class="avatar avatar-story me-2">
+                  <div class="avatar-circle bg-pink"><h2 class="text-black avatar-content">{{ post.userPost|make_list|first }}</h2></div>
+                </div>
+                <!-- Info -->
+                <div>
+                  <div class="nav nav-divider d-flex ">
+                    <h6 class="nav-item card-title mb-0">@{{ post.userPost.username }}</h6>
+                    <span class="nav-item small ms-3">{{ post.postDate }}</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card feed action dropdown START -->
+                {% if request.user == post.userPost %}
+<div class="dropdown">
+  <button style="border:none;" class="dropdown-toggle text-black bg-white" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-ellipsis-vertical"></i>
+  </button>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+
+    <li><button class="dropdown-item" type="button"><a href="{% url 'editPost' pk=post.pk %}" class="font-weight-light text-decoration-none text-muted mt-3">Изменить</a></button></li>
+    <li><button class="dropdown-item" type="button"><a href="{% url 'deletePost' pk=post.pk %}"  class="font-weight-light text-decoration-none text-muted mt-3">Удалить</a></button></li>
+
+  </ul>
+</div>
+                {% else %}
+                {% endif %}
+
+
+              <!-- Card feed action dropdown END -->
+            </div>
+          </div>
+          <!-- Card header END -->
+          <!-- Card body START -->
+          <div class="card-body d-flex flex-column ">
+            <p>{{ post.content}}</p>
+            <!-- Card img -->
+              <div></div>
+            <img class="card-img image" src="{{ post.image.url }}" alt="Post">
+
+        <h1 class="mt-3">Commments {{ post.comment_set.count }}</h1>
+
+    <form class="mb-4" action="" method="POST">
+      {% csrf_token %}
+        <div class="d-flex" style="height:50px;">
+{{ form.text }}
+      <button type="submit" name="button">Отправить</button>
+            </div>
+    </form>
+              {% for comment in comments %}
+              <div class="d-flex mt-3 container">
+                <div class="avatar avatar-story me-2 ">
+                  <div class="avatar-circle bg-pink"><h2 class="text-black avatar-content">{{ comment.user|make_list|first }}</h2></div>
+                </div>
+              <div class="bg-light rounded-start-top-0 p-3 rounded w-100">
+                      <div class="d-flex justify-content-between">
+                          <div class="d-flex justify-content-between">
+                <!-- Avatar -->
+
+                <!-- Info -->
+                <div>
+                  <div class=" d-flex align-items-center">
+                      <div class="d-flex justify-content-between align-items-center container">
+                          <h5 class="card-title mb-0">@{{ comment.user }} </h5>
+                          <span class="small ms-4">{{ comment.created }}</span>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+                      </div>
+                      <p class="small mb-0 ms-3 mt-1">{{ comment.text }}</p>
+                    </div>
+          </div>
+
+
+            {% endfor %}
+            </div>
+                    </div>
+
+<!--    <h1>Commment {{ post.comment_set.count }}</h1>-->
+<!--    <form action="" method="POST">-->
+<!--      {% csrf_token %}-->
+<!--      {{ form.text }}<br>-->
+<!--      <button type="submit" name="button">Отправить</button>-->
+<!--    </form>-->
+<!--                {% for comment in comments %}-->
+<!--                    {{ comment.user }}<br>-->
+<!--                    {{ comment.text }}<br>-->
+<!--                    {{ comment.created }}<br>-->
+<!--                {% endfor %}-->
+{% endblock %}
