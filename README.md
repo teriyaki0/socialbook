@@ -1,7 +1,7 @@
 # socialbook
 django social media
 <p align='center'> 
-<img src='https://photos.app.goo.gl/XxDHeoKkQFuh2Q7y5'>
+<img src='https://photos.google.com/share/AF1QipPx6EjZEJ8cC2K6amlgV9w_jxoV7A6n8KorTEgLpFudLKqWWr4pkCQZCSZDguZLhA/photo/AF1QipO1Wv-UgyrU1NbOO8xS-cuvHVO_Q91luwesQtWg?key=ZktSLWFvb0YxSWdEN3VnbHBKRmN6RjFub0VhdHJ3'>
 </p>
 
 # Installation Process
