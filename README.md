@@ -1,7 +1,7 @@
 # socialbook
 django social media
 <p align='center'> 
-<img src='![Uploading image.png…]()'>
+<img src='https://photos.app.goo.gl/XxDHeoKkQFuh2Q7y5'>
 </p>
 
 # Installation Process
