@@ -1,7 +1,7 @@
 # socialbook
 django social media
 <p align='center'> 
-![Imafe alt](https://photos.google.com/share/AF1QipPx6EjZEJ8cC2K6amlgV9w_jxoV7A6n8KorTEgLpFudLKqWWr4pkCQZCSZDguZLhA/photo/AF1QipO1Wv-UgyrU1NbOO8xS-cuvHVO_Q91luwesQtWg?key=ZktSLWFvb0YxSWdEN3VnbHBKRmN6RjFub0VhdHJ3)
+![Image alt](https://lh3.googleusercontent.com/pw/AMWts8DRBq_ZofZDXbumlCq1Fp1aeqH28c8zNfHqquHrdEbdIwMR2XFle1R04CI7f42NJuJr-bnzKqWZji00ZflNYCGw9qMMnnLuyNgJtP6aP5GuBrtCY07sk-Hwr7Dc5HvpkX_aA4Dg2-p04dTxOhfQQFYN=w1724-h933-no?authuser=0)
 </p>
 
 # Installation Process
