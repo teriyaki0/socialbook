@@ -2,6 +2,7 @@
 django social media
 <p align='center'> 
 ![Image alt](https://lh3.googleusercontent.com/pw/AMWts8DRBq_ZofZDXbumlCq1Fp1aeqH28c8zNfHqquHrdEbdIwMR2XFle1R04CI7f42NJuJr-bnzKqWZji00ZflNYCGw9qMMnnLuyNgJtP6aP5GuBrtCY07sk-Hwr7Dc5HvpkX_aA4Dg2-p04dTxOhfQQFYN=w1724-h933-no?authuser=0)
+  <img src='https://lh3.googleusercontent.com/pw/AMWts8DRBq_ZofZDXbumlCq1Fp1aeqH28c8zNfHqquHrdEbdIwMR2XFle1R04CI7f42NJuJr-bnzKqWZji00ZflNYCGw9qMMnnLuyNgJtP6aP5GuBrtCY07sk-Hwr7Dc5HvpkX_aA4Dg2-p04dTxOhfQQFYN=w1724-h933-no?authuser=0'>
 </p>
 
 # Installation Process
